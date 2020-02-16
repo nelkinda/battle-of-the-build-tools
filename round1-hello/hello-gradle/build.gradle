@@ -1,0 +1,13 @@
+plugins {
+    id 'java'
+}
+
+group 'com.nelkinda.blog.botbt'
+version '0.0.1-SNAPSHOT'
+
+sourceCompatibility = 13
+
+wrapper {
+    gradleVersion "6.1.1"
+    jarFile ".gradle/wrapper/gradle-wrapper.jar"
+}

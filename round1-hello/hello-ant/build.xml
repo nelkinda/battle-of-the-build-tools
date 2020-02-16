@@ -1,0 +1,26 @@
+<project
+    name="hello-ant"
+    default="dist"
+    basedir="."
+>
+    <target
+        name="compile"
+    >
+        <mkdir dir="classes"/>
+        <javac srcdir="src/main/java" destdir="classes" includeantruntime="false"/>
+    </target>
+
+    <target
+        name="dist"
+        depends="compile"
+    >
+        <jar jarfile="hello.jar" basedir="classes"/>
+    </target>
+
+    <target
+        name="clean"
+    >
+        <delete dir="classes"/>
+        <delete file="hello.jar"/>
+    </target>
+</project>

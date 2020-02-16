@@ -1,0 +1,29 @@
+# Ant
+.ant
+classes/
+
+# Gradle
+.gradle/
+build/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Java
+*.class
+*.jar
+
+# Make
+classes/
+User.mk
+
+# Maven
+target/
+
+# SBT
+project/
+target/
+
+# Vim
+*.swp
